@@ -14,10 +14,12 @@ It is presumed that the model violates iid assumptions, since adjacent pixels ar
 While a customized Generalized model would be the right choice, due to limited time, simple models are fitted. 
 Residual analysis is done for the best predictive models to see variance of residuals and if any patterns exist, as when iid assumptions are not met, the results we see are often erroneous.  
 
-Test metric for model is mean sqaured error.
+Test metric for model is mean sqaured error. CV is used to get accurate results. 
 
-Models fitted are - Linear, Linear regularized, KNeighborsRegressor , MLPRegressor, CNN, RandomForest, DecisionTreeRegressor, SVM Regressor , 
+Models fitted are - Linear, Linear regularized, KNeighborsRegressor , MLPRegressor, CNN, RandomForest, DecisionTreeRegressor, SVM Regressor (chained reg.)
+with both normal flattened and convoluted data to see predicted power.
 
-(SVM model does not fit on multi-o/p , so chained regression is used)
+Predicted depth images have been plotted as well. 
+
 
 
