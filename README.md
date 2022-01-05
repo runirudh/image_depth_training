@@ -11,15 +11,24 @@ dependent variable   -> output data is depth information for these 3500 images (
 This is a regression problem where the predictions are multi-output, namely the 9216 pixels of the depth matrix. 
 
 It is presumed that the model violates iid assumptions, since adjacent pixels are likely to be related and not independent.
-While a customized Generalized model would be the right choice, due to limited time, simple models are fitted. 
+While a customized Generalized model would be the right choice, due to limited time/knowledge, simple models are fitted. 
 Residual analysis is done for the best predictive models to see variance of residuals and if any patterns exist, as when iid assumptions are not met, the results we see are often erroneous.  
 
-Test metric for model is mean sqaured error. CV is used to get accurate results. 
+Test metric for model is mean sqaured error. CV is used to get accurate results. Hyperparameters are give different values for best results.
 
-Models fitted are - Linear, Linear regularized, KNeighborsRegressor , MLPRegressor, CNN, RandomForest, DecisionTreeRegressor, SVM Regressor (chained reg.)
+Models fitted are - Linear, Linear regularized, KNeighborsRegressor , Multi Layer Perceptron Regressor, CNN, RandomForest, DecisionTreeRegressor, SVM Regressor (chained reg.)
 with both normal flattened and convoluted data to see predicted power.
 
 Predicted depth images have been plotted as well. 
+
+Model Performance:
+Linear        =              okay , best mse = 
+Knn           =              better, best mse = 
+MLRegressor   =              learns to recognize patterns only in same parts, makes predictions on that, mse = 
+CNN           =              mse = 
+Random Forest =              
+Decision Tree =              good fit, mse = 
+SVM           = 
 
 
 
