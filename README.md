@@ -23,12 +23,19 @@ with both normal flattened and convoluted data to see predicted power.
 Predicted depth images have been plotted as well. 
 
 Model Performance:
+
 Linear        =              okay , best mse = 0.008
+
 Knn           =              better, best mse = 0.0051 at k=2
+
 MLRegressor   =              learns to recognize patterns only in same parts, ends making same predictionsfor. new data, mse = 0.0057
+
 CNN           =              mse = 
+
 Random Forest =              good fit, best mse = 0.0032
+
 Decision Tree =              good fit, best mse = 0.0034
+
 SVM           = 
 
 
