@@ -14,20 +14,21 @@ It is presumed that the model violates iid assumptions, since adjacent pixels ar
 While a customized Generalized model would be the right choice, due to limited time/knowledge, simple models are fitted. 
 Residual analysis is done for the best predictive models to see variance of residuals and if any patterns exist, as when iid assumptions are not met, the results we see are often erroneous.  
 
-Test metric for model is mean sqaured error. CV is used to get accurate results. Hyperparameters are give different values for best results.
+Test metric for model is mean sqaured error. CV is used to get accurate results. Hyperparameters are given different values for best results.
 
-Models fitted are - Linear, Linear regularized, KNeighborsRegressor , Multi Layer Perceptron Regressor, CNN, RandomForest, DecisionTreeRegressor, SVM Regressor (chained reg.)
+Models fitted are - 
+Linear, Linear regularized, KNeighborsRegressor , Multi Layer Perceptron Regressor, CNN, RandomForest, DecisionTreeRegressor, SVM Regressor (chained reg.)
 with both normal flattened and convoluted data to see predicted power.
 
 Predicted depth images have been plotted as well. 
 
 Model Performance:
-Linear        =              okay , best mse = 
-Knn           =              better, best mse = 
-MLRegressor   =              learns to recognize patterns only in same parts, makes predictions on that, mse = 
+Linear        =              okay , best mse = 0.008
+Knn           =              better, best mse = 0.0051 at k=2
+MLRegressor   =              learns to recognize patterns only in same parts, ends making same predictionsfor. new data, mse = 0.0057
 CNN           =              mse = 
-Random Forest =              
-Decision Tree =              good fit, mse = 
+Random Forest =              good fit, best mse = 0.0032
+Decision Tree =              good fit, best mse = 0.0034
 SVM           = 
 
 
