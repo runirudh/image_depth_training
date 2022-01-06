@@ -17,7 +17,8 @@ Residual analysis is done for the best predictive models to see variance of resi
 Test metric for model is mean sqaured error. CV is used to get accurate results. Hyperparameters are given different values for best results.
 
 Models fitted are - 
-Linear, Linear regularized, KNeighborsRegressor , Multi Layer Perceptron Regressor, CNN, RandomForest, DecisionTreeRegressor, SVM Regressor (chained reg.)
+Linear, Linear regularized, KNeighborsRegressor , Multi Layer Perceptron Regressor, CNN, RandomForest, DecisionTreeRegressor
+
 with both normal flattened and convoluted data to see predicted power.
 
 Predicted depth images have been plotted as well. 
