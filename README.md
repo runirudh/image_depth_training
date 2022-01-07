@@ -29,7 +29,7 @@ Predicted depth images have been plotted as well to highlight difference between
 
 Model Performance:
 
-Linear        =              okay , best mse = 0.008     (same for ridge regularized and unregularized)
+Linear        =              okay , best mse = 0.008     (for unregularized)
 
 Knn           =              better, best mse = 0.0051 at k=2
 
