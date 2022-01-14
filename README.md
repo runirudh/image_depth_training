@@ -65,7 +65,7 @@ The contrast in predictive power of models of using different inputs is showcase
 
 **Knn**           =              good fit, best mse = 0.0051 at k=2
 
-**MLRegressor**   =             reduces overall mse by making the same predictions, mse = 0.0057
+**MLRegressor**   =             Bad model. reduces overall mse by making the same predictions, mse = 0.0057
 
 **CNN**           =              good fit, **best mse** = 0.0035, R2 = 0.86
 
