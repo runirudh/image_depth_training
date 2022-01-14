@@ -36,6 +36,7 @@ namely **predicting the 9216 pixels** of the output depth matrix (image).
 2. Training depth on this matrix, allows us better run times and better learning.
 
 **Note** ->
+
 It is presumed that the model violates iid assumptions, since adjacent pixels are likely to be related and not independent.
 While a Generalized model might be the right choice here, due to time/ knowledge constraints, 
 simple models are fitted & tested by changing hyperparameters. 
