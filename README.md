@@ -10,14 +10,14 @@ independent variable -> input data is a 4d array containing 3500 color (rgb) ima
 dependent variable   -> output data is depth information for these 3500 images (over a single channel) stored in a 4d array.
                         size of image is 96 x 96 pixels.
                         this is the time of flight information, coloring the image such that nearer objects are differently colored than far objects in an image.
-                        shape is (3500,1,96,96)
+                        shape is (3500,1,96,96).
                         depth range is normalized to [0, 1.2] 
 
-This is a regression problem where we make multiple predictions, namely the 9216 pixels of the output depth matrix (image). 
+This is a regression problem where we make multiple predictions, namely predicting the 9216 pixels of the output depth matrix (image). 
 
 It is presumed that the model violates iid assumptions, since adjacent pixels are likely to be related and not independent.
-While a customized Generalized model would be the right choice, due to limited time/knowledge, simple models are fitted. 
-Residual analysis is done for the best predictive models to see variance of residuals and if any patterns exist, as when iid assumptions are not met, the results we see are often erroneous.  
+While a bespoke Generalized model would be the right choice, due to time and knowledge constraints, simple models are fitted. 
+Residuals are printed out for the best predictive models to see variance of residuals and if any patterns exist, as when iid assumptions are not met, the results we see are often erroneous.  
 
 Test metric for model is mean sqaured error. CV is used to get accurate results. Different hyperparameters are tested for best fit & results.
 
