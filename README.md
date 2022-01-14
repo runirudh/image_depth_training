@@ -9,7 +9,7 @@ data is stored originally in a npz format (a Numpy file format)
                         
                         size of image is 96 x 96 pixels
                         
-                        **data shape is (3500,3,96,96)**     .. (no. of images, channels, pixel value, pixel value)
+                        <data shape is (3500,3,96,96)>   .. (no. of images, channels, pixel value, pixel value)
                         
 **dependent variable**   -> 
                         output data is depth information for these 3500 images (over a single channel) stored in a 4d array.
