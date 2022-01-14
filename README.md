@@ -31,17 +31,15 @@ This is a regression problem where we make **multiple predictions**, namely **pr
 **Note** ->
 
 It is presumed that the model violates iid assumptions, since adjacent pixels are likely to be related and not independent.
-
-While a bespoke Generalized model would be the right choice here, due to time and knowledge constraints, 
-
+While a Generalized model might be the right choice here, due to time/ knowledge constraints, 
 simple models are fitted & tested by changing hyperparameters. 
 
 Residuals are printed out for the best predictive models to see variance of residuals and if any patterns exist, 
 as when iid assumptions are not met, the results we get are often erroneous.  
 
-### Test metric for model is mean sqaured error 
+**Test metric for model is Mean Squared error**
 
-### CV is used to get accurate result
+**CV is used to get accurate result**
 
 ## Models fitted are - 
 ### Linear, Linear regularized, KNeighborsRegressor , Multi Layer Perceptron Regressor, CNN, RandomForest, DecisionTreeRegressor
@@ -62,11 +60,10 @@ Knn           =              better, best mse = 0.0051 at k=2
 
 MLRegressor   =              learns to recognize patterns but in same part of the image, ends making same predictions for test data, mse = 0.0057
 
-CNN           =              good fit, best mse = 0.0035, R2 = 0.86
+**CNN**           =              good fit, best mse = 0.0035, R2 = 0.86
 
-Random Forest =              good fit, best mse = 0.0032
+**Random Forest** =              good fit, best mse = 0.0032
 
-Decision Tree =              good fit, best mse = 0.0034
-
+**Decision Tree** =              good fit, best mse = 0.0034
 
 
