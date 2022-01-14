@@ -31,12 +31,11 @@ namely **predicting the 9216 pixels** of the output depth matrix (image).
 
 **Convolution** has been carried out on the RGB input matrix to yield convoluted matrix to make predictions. 
 
-This new matrix drastically reduces the feature space from (3* 96* 96) = 27648 to 96 features.
+1. This new matrix drastically reduces the feature space from (3* 96* 96) = 27648 to 96 features.
 
-Training depth on this matrix, allows us better run times and better learning.
+2. Training depth on this matrix, allows us better run times and better learning.
 
 **Note** ->
-
 It is presumed that the model violates iid assumptions, since adjacent pixels are likely to be related and not independent.
 While a Generalized model might be the right choice here, due to time/ knowledge constraints, 
 simple models are fitted & tested by changing hyperparameters. 
