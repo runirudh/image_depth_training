@@ -61,10 +61,10 @@ Knn           =              better, best mse = 0.0051 at k=2
 
 MLRegressor   =              learns to recognize patterns but in same part of the image, ends making same predictions for test data, mse = 0.0057
 
-**CNN**           =              good fit, best mse = 0.0035, R2 = 0.86
+**CNN**           =              good fit, **best mse** = 0.0035, R2 = 0.86
 
-**Random Forest** =              good fit, best mse = 0.0032
+**Random Forest** =              good fit, **best mse** = 0.0032
 
-**Decision Tree** =              good fit, best mse = 0.0034
+**Decision Tree** =              good fit, **best mse** = 0.0034
 
 
