@@ -29,6 +29,12 @@ data is stored originally in a npz format (a Numpy file format)
 This is a **_Multi-Output_ Regression problem** where we make **multiple predictions**, 
 namely **predicting the 9216 pixels** of the output depth matrix (image). 
 
+**Convolution** has been carried out on the RGB input matrix to yield convoluted matrix to make predictions. 
+
+This new matrix drastically reduces the feature space from (3* 96* 96) = 27648 to 96 features.
+
+Training depth on this matrix, allows us better run times and better learning.
+
 **Note** ->
 
 It is presumed that the model violates iid assumptions, since adjacent pixels are likely to be related and not independent.
