@@ -26,7 +26,8 @@ data is stored originally in a npz format (a Numpy file format)
                         
                         depth range is originally [-1.2,0] which is normalized to [0, 1.2] 
 
-This is a regression problem where we make **multiple predictions**, namely **predicting the 9216 pixels** of the output depth matrix (image). 
+This is a **_Regression_ problem* where we make **multiple predictions**, 
+namely **predicting the 9216 pixels** of the output depth matrix (image). 
 
 **Note** ->
 
