@@ -4,8 +4,11 @@
 data is stored originally in a npz format (a Numpy file format)
 
 **independent variable** -> 
+
                         input data is a 4d array containing 3500 color (rgb) images. 
+                        
                         size of image is 96 x 96 pixels
+                        
                         **data shape is (3500,3,96,96)**     .. (no. of images, channels, pixel value, pixel value)
                         
 **dependent variable**   -> 
