@@ -51,15 +51,15 @@ The contrast in predictive power of models of using different inputs is showcase
 
 ### Predicted depth images have been plotted at each stage to highlight difference between models.
 
-### Finding : Convoluted data achieves better prediction MSE and run time. 
+## Finding : Convoluted data achieves better prediction MSE and run time. 
 
 ## Model Performance:
 
-Linear        =              okay , best mse = 0.008     (for unregularized)
+**Linear**        =              okay , best mse = 0.008     (for unregularized)
 
-Knn           =              better, best mse = 0.0051 at k=2
+**Knn**           =              better, best mse = 0.0051 at k=2
 
-MLRegressor   =              learns to recognize patterns but in same part of the image, ends making same predictions for test data, mse = 0.0057
+**MLRegressor**   =             reduces overall mse by making the same predictions, mse = 0.0057
 
 **CNN**           =              good fit, **best mse** = 0.0035, R2 = 0.86
 
