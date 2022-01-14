@@ -1,34 +1,42 @@
-# image_depth_training
-data download link https://www.kaggle.com/kmader/showing-the-rgbd-images/notebook via kaggle nb
+# image_depth_training : Training depth information for objects in an image
+### data download [link](https://www.kaggle.com/kmader/showing-the-rgbd-images/notebook) via K Scott Mader's kaggle nb
 
 data is stored originally in a npz format (a Numpy file format)
 
-independent variable -> input data is a 4d array containing 3500 color (rgb) images. 
+**independent variable** -> 
+                        input data is a 4d array containing 3500 color (rgb) images. 
                         size of image is 96 x 96 pixels
-                        data shape is (3500,3,96,96)     .. (no. of images, channels, pixel value, pixel value)
+                        **data shape is (3500,3,96,96)**     .. (no. of images, channels, pixel value, pixel value)
                         
-dependent variable   -> output data is depth information for these 3500 images (over a single channel) stored in a 4d array.
+**dependent variable**   -> 
+                        output data is depth information for these 3500 images (over a single channel) stored in a 4d array.
                         size of image is 96 x 96 pixels.
-                        this is the time of flight information, coloring the image such that nearer objects are differently colored than far objects in an image.
-                        shape is (3500,1,96,96).
+                        **this is the _time of flight information_, 
+                        coloring the image such that _nearer objects_ are differently colored than _distant objects_ in an image.**
+                        **shape is (3500,1,96,96)**
                         depth range is normalized to [0, 1.2] 
 
-This is a regression problem where we make multiple predictions, namely predicting the 9216 pixels of the output depth matrix (image). 
+This is a regression problem where we make **multiple predictions**, namely **predicting the 9216 pixels** of the output depth matrix (image). 
 
+Note:
 It is presumed that the model violates iid assumptions, since adjacent pixels are likely to be related and not independent.
-While a bespoke Generalized model would be the right choice, due to time and knowledge constraints, simple models are fitted. 
-Residuals are printed out for the best predictive models to see variance of residuals and if any patterns exist, as when iid assumptions are not met, the results we see are often erroneous.  
+While a bespoke Generalized model would be the right choice here, due to time and knowledge constraints, simple models are fitted & tested by changing hyperparameters. 
+Residuals are printed out for the best predictive models to see variance of residuals and if any patterns exist, as when iid assumptions are not met, the results we get are often erroneous.  
 
-Test metric for model is mean sqaured error. CV is used to get accurate results. Different hyperparameters are tested for best fit & results.
+### Test metric for model is mean sqaured error 
 
-Models fitted are - 
-Linear, Linear regularized, KNeighborsRegressor , Multi Layer Perceptron Regressor, CNN, RandomForest, DecisionTreeRegressor
+### CV is used to get accurate result
+
+## Models fitted are - 
+### Linear, Linear regularized, KNeighborsRegressor , Multi Layer Perceptron Regressor, CNN, RandomForest, DecisionTreeRegressor
 
 Models are fitted with both normal flattened array data and convoluted data. The contrast in predictive power of models of using different inputs is showcased through time taken for model to run and by comparing mse values.  
 
-Predicted depth images have been plotted as well to highlight difference between models. Convoluted data achieves better prediction mse and run time. 
+### Predicted depth images have been plotted at each stage to highlight difference between models.
 
-Model Performance:
+### Finding : Convoluted data achieves better prediction MSE and run time. 
+
+## Model Performance:
 
 Linear        =              okay , best mse = 0.008     (for unregularized)
 
