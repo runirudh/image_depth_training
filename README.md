@@ -55,7 +55,7 @@ Models are fitted with both normal flattened array data and convoluted data.
 
 The contrast in predictive power of models of using different inputs is showcased through computation time and by comparing mse values.  
 
-### Predicted depth images have been plotted at each stage to highlight difference between models.
+**Predicted depth images** have been plotted at each stage to highlight difference between models.
 
 ## Finding : Convoluted data achieves better prediction MSE and run time. 
 
