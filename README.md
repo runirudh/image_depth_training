@@ -1,4 +1,4 @@
-# image_depth_training : Training depth information for objects in an image
+# Training depth information for objects in an image
 ### data download [link](https://www.kaggle.com/kmader/showing-the-rgbd-images/notebook) via K Scott Mader's kaggle nb
 
 data is stored originally in a npz format (a Numpy file format)
