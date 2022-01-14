@@ -61,9 +61,9 @@ The contrast in predictive power of models of using different inputs is showcase
 
 ## Model Performance:
 
-**Linear**        =              okay , best mse = 0.008     (for unregularized)
+**Linear**        =              okay model, best mse = 0.008     (for unregularized)
 
-**Knn**           =              better, best mse = 0.0051 at k=2
+**Knn**           =              good fit, best mse = 0.0051 at k=2
 
 **MLRegressor**   =             reduces overall mse by making the same predictions, mse = 0.0057
 
