@@ -11,6 +11,7 @@ dependent variable   -> output data is depth information for these 3500 images (
                         size of image is 96 x 96 pixels.
                         this is the time of flight information, coloring the image such that nearer objects are differently colored than far objects in an image.
                         shape is (3500,1,96,96)
+                        depth range is normalized to [0, 1.2] 
 
 This is a regression problem where we make multiple predictions, namely the 9216 pixels of the output depth matrix (image). 
 
