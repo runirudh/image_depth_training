@@ -15,7 +15,8 @@ data is stored originally in a npz format (a Numpy file format)
                         
 **dependent variable**   -> 
 
-                        output data is depth information for these 3500 images (over a single channel) stored in a 4d array with shape (3500,1,96,96).
+                        output data is depth information for these 3500 images (over a single channel) 
+                        stored in a 4d array with shape (3500,1,96,96).
                         
                         size of image is 96 x 96 pixels.
                         
@@ -27,10 +28,16 @@ data is stored originally in a npz format (a Numpy file format)
 
 This is a regression problem where we make **multiple predictions**, namely **predicting the 9216 pixels** of the output depth matrix (image). 
 
-Note:
+**Note** ->
+
 It is presumed that the model violates iid assumptions, since adjacent pixels are likely to be related and not independent.
-While a bespoke Generalized model would be the right choice here, due to time and knowledge constraints, simple models are fitted & tested by changing hyperparameters. 
-Residuals are printed out for the best predictive models to see variance of residuals and if any patterns exist, as when iid assumptions are not met, the results we get are often erroneous.  
+
+While a bespoke Generalized model would be the right choice here, due to time and knowledge constraints, 
+
+simple models are fitted & tested by changing hyperparameters. 
+
+Residuals are printed out for the best predictive models to see variance of residuals and if any patterns exist, 
+as when iid assumptions are not met, the results we get are often erroneous.  
 
 ### Test metric for model is mean sqaured error 
 
@@ -39,7 +46,9 @@ Residuals are printed out for the best predictive models to see variance of resi
 ## Models fitted are - 
 ### Linear, Linear regularized, KNeighborsRegressor , Multi Layer Perceptron Regressor, CNN, RandomForest, DecisionTreeRegressor
 
-Models are fitted with both normal flattened array data and convoluted data. The contrast in predictive power of models of using different inputs is showcased through time taken for model to run and by comparing mse values.  
+Models are fitted with both normal flattened array data and convoluted data. 
+
+The contrast in predictive power of models of using different inputs is showcased through computation time and by comparing mse values.  
 
 ### Predicted depth images have been plotted at each stage to highlight difference between models.
 
