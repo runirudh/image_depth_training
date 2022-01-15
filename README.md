@@ -5,26 +5,25 @@ data is stored originally in a npz format (a Numpy file format)
 
 **independent variable** -> 
 
-                        input data is a 4d array containing 3500 color (rgb) images. 
+      input data is a 4d array containing 3500 color (rgb) images. 
                         
-                        size of image is 96 x 96 pixels
+      size of image is 96 x 96 pixels
                         
-                        <data shape is (3500,3,96,96)>   .. (no. of images, channels, pixel value, pixel value)
+      <data shape is (3500,3,96,96)>   .. (no. of images, channels, pixel value, pixel value)
                         
-                        pixel range is originally [0,255] changed to [0,1]
+      pixel range is originally [0,255] changed to [0,1]
                         
 **dependent variable**   -> 
 
-                        output data is depth information for these 3500 images (over a single channel) 
-                        stored in a 4d array with shape (3500,1,96,96).
+      output data is depth information for these 3500 images (over a single channel) 
+      
+      stored in a 4d array with shape (3500,1,96,96). size of image is 96 x 96 pixels 
                         
-                        size of image is 96 x 96 pixels.
-                        
-                        **pixel value is assumed to be the _time of flight information_, 
+      pixel value here is assumed to be the time of flight information, 
                      
-                        coloring the image such that Nearer Objects in image are colored differently from Distant Objects
+      coloring the image such that Nearer Objects in image are colored differently from Distant Objects
                         
-                        depth range is originally [-1.2,0] which is normalized to [0, 1.2] 
+      depth range is originally [-1.2,0] which is normalized to [0, 1.2] 
 
 ### Data looks like:
 
