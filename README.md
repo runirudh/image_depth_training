@@ -36,23 +36,28 @@ data is stored originally in a npz format (a Numpy file format)
 This is a **_Multi-Output_ Regression problem** where we make **multiple predictions**, 
 namely **predicting the 9216 pixels** of the output depth matrix (image). 
 
-**Convolution** is done on the RGB input matrix to yield **convoluted matrix to make predictions** ->
+### Convolution
+We convolute the RGB input matrix to yield **convoluted matrix to make predictions ->**
   
-  This new matrix drastically reduces the feature space from (3* 96* 96) = 27648 to 96 features.
+  This drastically reduces the feature space from 27648 (3x96x96) to 96 features.
 
   Training depth on this matrix, allows us better run times and better learning.
 
 **Note** ->
 
-      It is presumed that the model violates iid assumptions, since adjacent pixels are likely to be           
+      It is presumed that the model violates iid assumptions on which we usually 
+      base our regression model, since adjacent pixels are likely to be related and 
+      not independent. 
       
-      related and not independent. While a Generalized model might be the right choice here, 
+      While a Generalized model might be the right choice here, 
       
-      due to time/ knowledge constraints, simple models are fitted & tested by changing hyperparameters. 
+      due to time/ knowledge constraints, simple models are fitted & tested
+      
+      by changing hyperparameters. 
 
-      Residuals are printed out for the best predictive models to see variance of residuals 
+      Residuals are printed out for the best predictive models to see variance of residuals and 
       
-      and if any patterns exist, as when iid assumptions are not met, the results are often erroneous.  
+      if any patterns exist, as when iid assumptions are not met, the results are often erroneous.  
 
 **Test metric for model is Mean Squared error**
 
