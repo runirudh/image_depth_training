@@ -68,22 +68,33 @@ The contrast in predictive power of models of using different inputs is showcase
 ### Finding : Convoluted data achieves better prediction MSE and run time. 
 
 ### Predictions:
+
   1. CNN :
   <img width="334" alt="Screen Shot 2022-01-15 at 2 06 44 PM" src="https://user-images.githubusercontent.com/96305841/149634742-a48e3cbc-e8c5-4bca-9041-7c3e4b07c1f2.png">
+  
+  2. Decision Tree Regressor :
+<img width="351" alt="dtr" src="https://user-images.githubusercontent.com/96305841/149638084-94419999-edcd-45c1-9403-32e86ba3da5c.png">
 
-  2.
-  3. 
+  3. K Neighbors Regressor :
+<img width="315" alt="knn" src="https://user-images.githubusercontent.com/96305841/149638088-6f1540f1-7526-4366-9813-2e82912e310b.png">
+
+  4. Linear Regressor (mse = 0.008) :
+<img width="317" alt="linear" src="https://user-images.githubusercontent.com/96305841/149638101-160af238-88cd-47c2-89ab-9993297c3e2d.png">
+
+  5. Random Forest :
+<img width="386" alt="rf" src="https://user-images.githubusercontent.com/96305841/149638126-b06865c5-f484-43bb-81a2-1fda723a3cc9.png">
+
+  6. MLP Regressor :
+<img width="444" alt="mlp" src="https://user-images.githubusercontent.com/96305841/149638198-9b866ca6-1ffb-49fe-a6db-acbda1521035.png">
 
 
-
-
-## Model Performance:
+## Model Performance (cross validation results):
 
 **Linear**        =              okay model, best mse = 0.008     (for unregularized)
 
 **Knn**           =              good fit, best mse = 0.0051 at k=2
 
-**MLRegressor**   =             Bad model. reduces overall mse by making the same predictions, mse = 0.0057
+**MLP Regressor**   =             Bad model. reduces overall mse by making the same predictions, mse = 0.0057
 
 **CNN**           =              good fit, **best mse** = 0.0035, R2 = 0.86
 
