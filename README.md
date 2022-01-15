@@ -19,11 +19,13 @@ data is stored originally in a npz format (a Numpy file format)
       
       stored in a 4d array with shape (3500,1,96,96). size of image is 96 x 96 pixels 
                         
-      pixel value here is assumed to be the time of flight information, 
+      Pixel value here is assumed to be the time of flight information, 
                      
-      coloring the image such that Nearer Objects in image are colored differently from Distant Objects
+      coloring the image such that Nearer Objects in image are colored differently 
+      
+      from Distant Objects.
                         
-      depth range is originally [-1.2,0] which is normalized to [0, 1.2] 
+      depth range is originally [-1.2, 0] which is normalized to [0, 1.2] 
 
 ### Data looks like:
 
