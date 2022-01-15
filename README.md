@@ -67,6 +67,16 @@ The contrast in predictive power of models of using different inputs is showcase
 
 ### Finding : Convoluted data achieves better prediction MSE and run time. 
 
+### Predictions:
+  1. CNN :
+  <img width="334" alt="Screen Shot 2022-01-15 at 2 06 44 PM" src="https://user-images.githubusercontent.com/96305841/149634742-a48e3cbc-e8c5-4bca-9041-7c3e4b07c1f2.png">
+
+  2.
+  3. 
+
+
+
+
 ## Model Performance:
 
 **Linear**        =              okay model, best mse = 0.008     (for unregularized)
