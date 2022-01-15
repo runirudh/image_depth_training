@@ -26,6 +26,14 @@ data is stored originally in a npz format (a Numpy file format)
                         
                         depth range is originally [-1.2,0] which is normalized to [0, 1.2] 
 
+### Data looks like:
+
+
+<img width="275" alt="Screen Shot 2022-01-15 at 1 25 24 PM" src="https://user-images.githubusercontent.com/96305841/149633461-69c92049-5985-45e5-935d-ec8b55d0bd0a.png">
+<img width="603" alt="Screen Shot 2022-01-15 at 1 24 43 PM" src="https://user-images.githubusercontent.com/96305841/149633462-c55f0991-4e8c-4895-84d4-87a017a7c64c.png">
+
+
+
 This is a **_Multi-Output_ Regression problem** where we make **multiple predictions**, 
 namely **predicting the 9216 pixels** of the output depth matrix (image). 
 
