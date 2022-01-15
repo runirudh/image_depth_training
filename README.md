@@ -64,15 +64,18 @@ We convolute the RGB input matrix to yield **convoluted matrix to make predictio
 **CV is used to get accurate result**
 
 ## Models fitted are - 
-### Linear, Linear regularized, KNeighborsRegressor , Multi Layer Perceptron Regressor, CNN, RandomForest, DecisionTreeRegressor
+     
+     Linear, Linear regularized, KNeighborsRegressor, Multi Layer Perceptron Regressor, 
+     
+     CNN, RandomForest, DecisionTreeRegressor
 
 Models are fitted with both normal flattened array data and convoluted data. 
 
-The contrast in predictive power of models of using different inputs is showcased through computation time and by comparing mse values.  
+### The contrast in predictive power of models using these different inputs is showcased through computation time and comparing mse values.  
 
-**Predicted depth images** have been plotted at each stage to highlight difference between models.
+**Predicted depth images** have been plotted at each stage to select hyperparameters for models.
 
-### Finding : Convoluted data achieves better prediction MSE and run time. 
+### Convoluted data achieves better prediction MSE and run time. 
 
 ### Predictions:
 
