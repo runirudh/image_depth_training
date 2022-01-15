@@ -28,8 +28,8 @@ data is stored originally in a npz format (a Numpy file format)
 
 ### Data looks like:
 
+<img width="642" alt="Screen Shot 2022-01-15 at 1 52 48 PM" src="https://user-images.githubusercontent.com/96305841/149634354-fdca6d6b-ea37-4d68-8e0a-56f8fdb638a5.png">
 
-<img width="275" alt="Screen Shot 2022-01-15 at 1 25 24 PM" src="https://user-images.githubusercontent.com/96305841/149633461-69c92049-5985-45e5-935d-ec8b55d0bd0a.png">
 <img width="603" alt="Screen Shot 2022-01-15 at 1 24 43 PM" src="https://user-images.githubusercontent.com/96305841/149633462-c55f0991-4e8c-4895-84d4-87a017a7c64c.png">
 
 
