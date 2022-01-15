@@ -55,9 +55,11 @@ We convolute the RGB input matrix to yield **convoluted matrix to make predictio
       
       by changing hyperparameters. 
 
-      Residuals are printed out for the best predictive models to see variance of residuals and 
+      Residuals are printed out for the best predictive models to see variance of 
       
-      if any patterns exist, as when iid assumptions are not met, the results are often erroneous.  
+      residuals and if any patterns exist, as when iid assumptions are not met, 
+      
+      the results are often erroneous.  
 
 **Test metric for model is Mean Squared error**
 
