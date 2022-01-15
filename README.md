@@ -39,9 +39,9 @@ namely **predicting the 9216 pixels** of the output depth matrix (image).
 ### Convolution
 We convolute the RGB input matrix to yield **convoluted matrix to make predictions ->**
   
-  This drastically reduces the feature space from 27648 (3x96x96) to 96 features.
+      This drastically reduces the feature space from 27648 (3x96x96) to 96 features.
 
-  Training depth on this matrix, allows us better run times and better learning.
+      Training depth on this matrix, allows us better run times and better learning.
 
 **Note** ->
 
